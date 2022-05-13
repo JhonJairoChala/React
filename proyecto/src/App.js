@@ -1,11 +1,10 @@
-import {ButtonUI} from './components/UI/ButtonUI/ButtonUI';
 import {Home} from './components/Pages/Home/Home';
+import {NavHome} from './components/UI/NavHome/NavHome';
 function App() {
   return (
   <div className="App">
-      <h1>Hola</h1>
-      <ButtonUI/>
-      <Home/>
+      <Home></Home>
+      <NavHome></NavHome>
     </div>
   );
 }

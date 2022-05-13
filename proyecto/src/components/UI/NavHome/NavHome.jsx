@@ -1,11 +1,19 @@
 import React from 'react'
 
-export const NavHome = ({textNav1 ,textNav2,textNav3, ref1 , ref2, ref3}) => {
+export const NavHome = ({}) => {
   return (
-    <nav>
-        <a href={ref1}>{textNav1}</a>
-        <a href={ref2}>{textNav2}</a>
-        <a href={ref3}>{textNav3}</a>
+    <nav class="Nav">
+      <ul>
+        <li>
+          <a href="" className="navHome1">Home</a>
+        </li>
+        <li>
+          <a href="" className="navHome2">About Us</a>
+        </li>
+        <li>
+          <a href="" className="navHome3">Contact Us</a>
+        </li>
+      </ul>
     </nav>
   )
 }
