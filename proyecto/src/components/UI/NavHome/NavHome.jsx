@@ -1,17 +1,26 @@
 import React from 'react'
+import { Ancla } from '../Ancla/Ancla'
 
-export const NavHome = ({}) => {
+export const NavHome = () => {
   return (
-    <nav class="Nav">
+    <nav className="navHome">
       <ul>
         <li>
-          <a href="" className="navHome1">Home</a>
-        </li>
-        <li>
-          <a href="" className="navHome2">About Us</a>
-        </li>
-        <li>
-          <a href="" className="navHome3">Contact Us</a>
+          <Ancla 
+          style="ancla" 
+          reference="https://google.com" 
+          textAncla="Home"
+          />
+          <Ancla 
+          style="ancla" 
+          reference="https://google.com" 
+          textAncla="AboutUs"
+          />
+          <Ancla 
+          style="ancla" 
+          reference="https://google.com" 
+          textAncla="ContactUs"
+          />
         </li>
       </ul>
     </nav>
