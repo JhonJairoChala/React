@@ -1,22 +1,27 @@
-import {Home} from "./components/Pages/Home/Home";
-import {AboutsUS} from "./components/Pages/AboutUS/AboutsUS";
-import {ContactUS} from "./components/Pages/ContactUS/ContactUS";
-import {NotFound} from "./components/Pages/NotFound/NotFound";
-import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/layouts/Header/Header";
+import { Body } from "./components/layouts/Body/Body";
+const buttonAddition = document.getElementById("ButtonAddition");
+const buttonReset = document.getElementById("ButtonReset");
+const buttonSubtraction = document.getElementById("ButtonSubtraction");
+const numberBody = document.getElementById("numberBody");
+
+function adittion(){
+  let result = parseInt(numberBody.value) + 1;
+  numberBody.textContent = result;
+}
+
 
 function App() {
   return (
   <div className="App">
     <Header/>
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/aboutUS" element={<AboutsUS/>}/>
-      <Route path="/contactUS" element={<ContactUS/>}/>
-      <Route path="*" element={<NotFound/>}/>
-    </Routes>
+    <section>
+      <Body/>
+    </section>
   </div>
   );
 }
+
+buttonAddition.addEventListener("click",adittion);
 
 export default App;
