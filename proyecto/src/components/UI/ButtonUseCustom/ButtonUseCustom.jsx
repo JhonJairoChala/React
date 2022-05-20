@@ -2,6 +2,6 @@ import React from 'react'
 
 export const ButtonUseCustom = () => {
   return (
-    <button>ButtonUseCustom</button>
+    <button class="btn btn-primary">ButtonUseCustom</button>
   )
 }

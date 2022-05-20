@@ -7,7 +7,7 @@ import { ButtonRickAndMorty } from '../../UI/ButtonRickAndMorty/ButtonRickAndMor
 
 export const Header = () => {
   return (
-    <header>
+    <header className='Header'>
       <Home/>
       <ButtonUseState/>
       <ButtonUseCustom/>
