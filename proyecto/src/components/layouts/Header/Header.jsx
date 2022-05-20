@@ -4,6 +4,7 @@ import { ButtonUseState } from '../../UI/ButtonUseState/ButtonUseState'
 import { ButtonUseCustom } from '../../UI/ButtonUseCustom/ButtonUseCustom'
 import { ButtonUseEffect } from '../../UI/ButtonUseEffect/ButtonUseEffect'
 import { ButtonRickAndMorty } from '../../UI/ButtonRickAndMorty/ButtonRickAndMorty'
+import { ButtonDark } from '../../UI/ButtonDark/ButtonDark'
 
 export const Header = () => {
   return (

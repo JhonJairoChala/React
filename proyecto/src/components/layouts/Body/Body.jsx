@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import { ButtonDark } from '../../UI/ButtonDark/ButtonDark';
 import { ButtonList } from '../../UI/ButtonList/ButtonList';
 import { ColorButton } from '../../UI/ColorButton/ColorButton';
 
@@ -21,12 +22,17 @@ export const Body = () => {
   const changeColor = () => {
     let color_Input = document.getElementById("color_input");
     let body = document.getElementById("App");
-    body.style.background = color_Input.value;  
+    body.style.background = color_Input.value;   
+  }
+  const darkMode = () => {
+    const btnNocturno = document.querySelector("#nocturno");
+    document.body.classList.toggle("dark");
+    btnNocturno.classList.toggle("active");
   }
   return (
     <div>
         <h2 id="numberBody" className='numberBody'>{counter}</h2>
-        <ColorButton/>
+        <br /><br /><br /><br />
         <section className='buttons'>
             <ButtonList 
             style="btnSum"
@@ -43,12 +49,17 @@ export const Body = () => {
             event={handleSubstract}
             textButton="(-)"
             />
+            <ColorButton/>
             <ButtonList 
             style="btnSum"
             event={changeColor}
             textButton="Color"
             />                        
         </section>
+        <div>
+          <ButtonDark
+          event={darkMode}/>
+        </div>
     </div>
   )
 }
