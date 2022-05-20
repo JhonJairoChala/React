@@ -3,7 +3,7 @@ import { Body } from "./components/layouts/Body/Body";
 
 function App() {
   return (
-  <div className="App">
+  <div className="App" id="App">
     <Header/>
     <section>
       <Body/>
@@ -11,7 +11,5 @@ function App() {
   </div>
   );
 }
-
-// buttonAddition.addEventListener("click",adittion);
 
 export default App;

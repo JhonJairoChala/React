@@ -1,32 +1,53 @@
-import React from 'react'
-const numberBody = document.getElementById("numberBody");
-let finalRes = 0; 
+import {useState} from 'react'
+import { ButtonList } from '../../UI/ButtonList/ButtonList';
+import { ColorButton } from '../../UI/ColorButton/ColorButton';
 
-function adittion(){
-  let sum = numberBody + 1;
-  finalRes += sum; 
-  document.getElementById("numberBody").textContent = finalRes;
-}
-
-function subtraction(){
-  let res =  finalRes - 1;
-  finalRes = res;
-  document.getElementById("numberBody").textContent = finalRes;
-}
-
-function reset(){
-  finalRes = 0;
-  document.getElementById("numberBody").textContent = finalRes;
-}
 export const Body = () => { 
   
+  const [counter, setCounter] = useState(0);
+
+  const handleAdd = () => {
+    setCounter(counter + 1)
+  }
+
+  const handleSubstract = () => {
+    setCounter(counter - 1)
+  }
+
+  const handleReset = () => {
+    setCounter(0)
+  }
+
+  const changeColor = () => {
+    let color_Input = document.getElementById("color_input");
+    let body = document.getElementById("App");
+    body.style.background = color_Input.value;  
+  }
   return (
     <div>
-        <h2 id="numberBody" className='numberBody'>0</h2>
+        <h2 id="numberBody" className='numberBody'>{counter}</h2>
+        <ColorButton/>
         <section className='buttons'>
-            <button onClick={subtraction}>(-)</button>
-            <button onClick={reset}>(Reset)</button>
-            <button onClick={adittion}>(+)</button>
+            <ButtonList 
+            style="btnSum"
+            event={handleAdd}
+            textButton="(+)"
+            />
+            <ButtonList 
+            style="btnSum"
+            event={handleReset}
+            textButton="Reset"
+            />
+            <ButtonList 
+            style="btnRest"
+            event={handleSubstract}
+            textButton="(-)"
+            />
+            <ButtonList 
+            style="btnSum"
+            event={changeColor}
+            textButton="Color"
+            />                        
         </section>
     </div>
   )
