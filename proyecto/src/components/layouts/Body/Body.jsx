@@ -26,13 +26,16 @@ export const Body = () => {
   }
   const darkMode = () => {
     const btnNocturno = document.querySelector("#nocturno");
-    document.body.classList.toggle("dark");
+    document.getElementById("App").classList.toggle("dark");
+    // document.bodyApp.classList.toggle("dark");
     btnNocturno.classList.toggle("active");
   }
   return (
     <div>
         <h2 id="numberBody" className='numberBody'>{counter}</h2>
-        <br /><br /><br /><br />
+        <ButtonDark
+        event={darkMode}/>
+        <br /><br /><br /><br /><br /><br />
         <section className='buttons'>
             <ButtonList 
             style="btnSum"
@@ -56,10 +59,6 @@ export const Body = () => {
             textButton="Color"
             />                        
         </section>
-        <div>
-          <ButtonDark
-          event={darkMode}/>
-        </div>
     </div>
   )
 }

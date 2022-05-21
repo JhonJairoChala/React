@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ButtonDark = (event) => {
+export const ButtonDark = ({event}) => {
   return (
     <button onClick={event} className="nocturno" id="nocturno" >
         <span><i class="fa-solid fa-sun"></i></span>
