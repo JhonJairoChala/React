@@ -109,13 +109,7 @@ div.dark {
   color: #fff;
 }
 
-body.dark p {
-  color: white;
-}
 
-body.dark h1 {
-  color: white;
-}
 
 body.dark button{
   border: solid 2px black;
@@ -123,4 +117,24 @@ body.dark button{
 
 body.dark select{
   border: solid 2px black;
+}
+
+.button2{
+  height:2rem;
+  width:6rem;
+  margin-left: 4%;
+}
+
+.dark{
+  background:black;
+}
+
+.light{
+  background-color: #ffffff;
+}
+
+.logo{
+  margin-left:35%;
+  filter: grayscale();
+  height:17rem;
 }
