@@ -20,13 +20,7 @@ export const Body = () => {
   const handleReset = () => {
     setCounter(0)
   }
-  let color_Input = document.getElementById("color_input");
-  const changeColor = (event) => {
-    let body = document.getElementById("App");
-    // body.style.background = color_Input.value;
-    body.style.color = event.target.value;   
-  }
-  
+
   const darkMode = () => {
     const btnNocturno = document.querySelector("#nocturno");
     document.getElementById("App").classList.toggle("dark");
@@ -62,13 +56,7 @@ export const Body = () => {
             event={handleSubstract}
             textButton="(-)"
             />
-            <ColorButton/>
-            <ButtonList 
-            style="btnSum"
-            event={changeColor}
-            textButton="Color"
-            value={color_Input.value}
-            />                        
+            <ColorButton/>                        
         </section>
         <section>
           <Logo/>
