@@ -1,19 +1,11 @@
 import React from 'react'
-import { Home } from '../../UI/Home/Home'
-import { ButtonUseState } from '../../UI/ButtonUseState/ButtonUseState'
-import { ButtonUseCustom } from '../../UI/ButtonUseCustom/ButtonUseCustom'
-import { ButtonUseEffect } from '../../UI/ButtonUseEffect/ButtonUseEffect'
-import { ButtonRickAndMorty } from '../../UI/ButtonRickAndMorty/ButtonRickAndMorty'
-import { ButtonDark } from '../../UI/ButtonDark/ButtonDark'
+import { NavigatorUI } from '../../UI/NavigatorUI/NavigatorUI'
+
 
 export const Header = () => {
   return (
-    <header className='Header'>
-      <Home/>
-      <ButtonUseState/>
-      <ButtonUseCustom/>
-      <ButtonUseEffect/>
-      <ButtonRickAndMorty/>
+    <header>
+        <NavigatorUI/>
     </header>
   )
 }
