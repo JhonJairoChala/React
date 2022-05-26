@@ -22,7 +22,7 @@ function App() {
         <Route path='/buttonRickAndMorty' element={<ButtonRickAndMorty/>}/>
         <Route path='*' element={<NotFound/>}/>
     </Routes>
-    <Body/>
+    {/* <Body/> */}
   </div>
   );
 }
