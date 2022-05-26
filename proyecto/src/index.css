@@ -138,3 +138,7 @@ body.dark select{
   filter: grayscale();
   height:17rem;
 }
+
+.App{
+  padding-bottom: 10%;
+}
