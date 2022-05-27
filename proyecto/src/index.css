@@ -156,3 +156,48 @@ body.dark select{
 .App{
   padding-bottom: 10%;
 }
+
+.character_Card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 5rem;
+  margin-top: 1%;
+  background-color: rgb(36,40,47);
+  text-align: center;
+}
+
+.nameCharacters{
+  color: white;
+  background-color: rgb(60,62,68);
+  text-align: center;
+  width: 77%;
+  margin-left: 46px;
+  font-size: 25px;
+  border-left: solid 2px white;
+  border-right: solid 2px white;
+  border-bottom: solid 2px white;
+}
+
+.imgCharacters{
+  border-left: solid 2px white;
+  border-right: solid 2px white;
+  border-top: solid 2px white;
+  margin-top: 2%;
+}
+
+.imgCharacters:hover{
+  height: 20rem;
+}
+
+.nameCharacters:hover{
+  height: 4rem;
+  font-size: 35px;
+}
+
+.textCharacter{
+  text-align: center;
+  font-size: 35px;
+}
+
+

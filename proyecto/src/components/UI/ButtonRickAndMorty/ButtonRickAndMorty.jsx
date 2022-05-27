@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {useEffect} from 'react';
-
+import imagen from '../../../Images/rick-and-morty.webp';
 export const ButtonRickAndMorty = () => {
   const URL = "https://rickandmortyapi.com/api/character/?name=";
   const [character, searchCharacter] = useState(false);
@@ -11,10 +11,10 @@ export const ButtonRickAndMorty = () => {
   }
 
   useEffect(() => {
-    if(searchCharacter){
+    if(character){
         getCharactersByKeys(document.getElementById("input_Character").value);
     }else{
-        createElements();
+      
     }
   },[character])
 
@@ -48,10 +48,10 @@ export const ButtonRickAndMorty = () => {
   
   return (
     <div>
-      <h1>Que personaje quieres buscar</h1>
-      <input type="text" id="input_Character" className="input_Character" onKeyDown={activeName}></input>
-      <div id='Card'>
-
+      <h1 className='textCharacter'>Que personaje quieres buscar</h1>
+      <input type="text" id="input_Character"  className="form-control" onKeyDown={activeName}></input>
+      <div id='Card' className='character_Card'>
+      
       </div>
     </div>
   )
