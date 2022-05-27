@@ -8,6 +8,8 @@ import { ButtonUseEffect } from "./components/UI/ButtonUseEffect/ButtonUseEffect
 import { ButtonUseState } from "./components/UI/ButtonUseState/ButtonUseState";
 import { Home } from "./components/UI/Home/Home";
 import { Body } from "./components/layouts/Body/Body";
+import { Mailer } from "./components/UI/Mailer/Mailer";
+
 
 function App() {
   return (
@@ -16,7 +18,7 @@ function App() {
     <Routes>  
         <Route path='/' element={<Home/>}/>
         <Route path='/useCustom' element={<ButtonUseCustom/>}/>
-        <Route path='/useEffect' element={<ButtonUseEffect/>}/>
+        <Route path='/mailer' element={<Mailer/>}/>
         <Route path='/useState' element={<ButtonUseState/>}/>
         <Route path='/buttonDark' element={<ButtonDark/>}/>
         <Route path='/buttonRickAndMorty' element={<ButtonRickAndMorty/>}/>

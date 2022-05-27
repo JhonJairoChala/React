@@ -34,6 +34,7 @@ export const ButtonRickAndMorty = () => {
     while(true){
         let container = document.createElement('div')
         let imgSpot = document.createElement('img')
+        container.setAttribute('class',"character_Container")
         imgSpot.setAttribute('src',url);
         imgSpot.setAttribute('class',"imgCharacters")
         container.appendChild(imgSpot);
@@ -48,10 +49,12 @@ export const ButtonRickAndMorty = () => {
   
   return (
     <div>
+      <br />
       <h1 className='textCharacter'>Que personaje quieres buscar</h1>
+      <br />
       <input type="text" id="input_Character"  className="form-control" onKeyDown={activeName}></input>
       <div id='Card' className='character_Card'>
-      
+          <img src={imagen} alt="" className="imgRickAndMorty"/>
       </div>
     </div>
   )

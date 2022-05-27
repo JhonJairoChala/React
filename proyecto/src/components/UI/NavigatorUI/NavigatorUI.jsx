@@ -5,7 +5,7 @@ export const NavigatorUI = () => {
   return (
     <nav className='Nav'>
         <Link to="/" className='link'><span>Home</span></Link>
-        <Link to="/useEffect" className='link'>UseEffect</Link>
+        <Link to="/mailer" className='link'>Mailer</Link>
         <Link to="/useState" className='link'>UseState</Link>
         <Link to="/useCustom" className='link'>UseCustom</Link>
         <Link to="/buttonRickAndMorty" className='link'>RickAndMorty</Link>
