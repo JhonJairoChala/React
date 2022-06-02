@@ -237,3 +237,8 @@ body.dark select{
   background-color:rgb(42, 95, 96);
   border: solid 1px white;
 }
+
+.principal{
+  margin-left: 50%;
+  margin-top: 15%;
+}

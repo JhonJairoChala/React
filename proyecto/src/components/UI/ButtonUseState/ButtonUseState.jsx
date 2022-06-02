@@ -1,7 +1,10 @@
 import React from 'react'
+import { ResponseEmail } from '../ResponseEmail/ResponseEmail'
 
 export const ButtonUseState = () => {
   return (
-    <div></div>
+    <div>
+      <ResponseEmail></ResponseEmail>
+    </div>
   )
 }
