@@ -242,3 +242,33 @@ body.dark select{
   margin-left: 50%;
   margin-top: 15%;
 }
+
+.img-gif{
+  height: 20rem;
+  margin-left: 25%;
+  width: 50%;
+  margin-top: 5%;
+  border: solid 5px rgb(59, 55, 55);
+}
+
+#mainContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: rgb(18, 104, 173);
+  width: 70%;
+  margin-left: 15%;
+  padding-bottom: 5rem;  
+}
+
+#input_Gif{
+  margin-top: 2%;
+  text-align: center;
+  margin-left: 43%;
+  margin-bottom: 2%;
+}
+
+.text-Gif{
+  margin-top: 3%;
+  text-align: center;
+}

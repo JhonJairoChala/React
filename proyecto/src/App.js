@@ -19,7 +19,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/useCustom' element={<ButtonUseCustom/>}/>
         <Route path='/mailer' element={<Mailer/>}/>
-        <Route path='/useState' element={<ButtonUseState/>}/>
+        <Route path='/apiTenor' element={<ButtonUseState/>}/>
         <Route path='/buttonDark' element={<ButtonDark/>}/>
         <Route path='/buttonRickAndMorty' element={<ButtonRickAndMorty/>}/>
         <Route path='*' element={<NotFound/>}/>
